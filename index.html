@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <title>Mondioring Brasil</title>
 </head>
 <body>
     <header>
-        <div class="nav">
+        <div class="nav" id="nav">
             <div class="nav-logo">
                 <img src="assets/logo.png" alt="">
             </div>
               <ul class="nav-itens">
                   <li> <img src="assets/pata.svg" alt=""> Início</li>
-                  <li> <img src="assets/pata.svg" alt=""> <p>Informações</p>
+                  <li> <img src="assets/pata.svg" alt=""> Informações
                     <div class="dropdown-info">
                         <a href="#">Contato</a>
                         <a href="#">Regulamentos</a>
@@ -38,10 +40,15 @@
           <div class="patrocinadores">
             <h1>Patrocinadores:</h1>
             <div class="img-patrocinadores">
-                <img src="assets/cna.png" alt="">
+                <img src="assets/stormdog.png" alt="">
                 <img src="assets/zawar.png" alt="">
                 <img src="assets/hawary.png" alt="">
             </div>
+          </div>
+          <div class="menu-ham">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
     </header>
@@ -74,10 +81,10 @@
         <video loop muted autoplay id="videosobre">
             <source src="assets/videomond.mp4" type="video/mp4">
         </video>
-
         <div class="wrapper">
-        <p> O que é <br> Mondioring?</p>
-        </div>
+        <h1> O que é <br> Mondioring?</p></h1>
+       </div>  
+    </div>
 
 
         <div class="sobre-informa">
@@ -88,21 +95,37 @@
 
            <div class="tipos">
             <div class="caixa">
-                <img src="assets/dog1.png" alt="">
-                <p>Exercícios de saltos</p>
-            </div>
-            <div class="caixa">
                 <img src="assets/dog2.png" alt="">
                 <p>Exercícios de obediência</p>
+            </div>
+            <div class="caixa">
+                <img src="assets/dog1.png" alt="">
+                <p>Exercícios de saltos</p>
             </div>
             <div class="caixa">
                 <img src="assets/dog3.png" alt="">
                 <p>Exercícios de proteção</p>
             </div>
            </div>
+           <div class="texto1">
+            <p>A superação e a coragem são sinônimas na relação existente da dupla Homem-Cachorro durante as provas. Os eventos são abertos ao público, possibilitando que a modalidade esportiva demonstre um verdadeiro espetáculo aos curiosos e admiradores da prática.</p>
+           </div>
         </div>
-      </div>
-
+    </div>
+    <div class="sobre-a-cnm">
+        <div class="banner-cnm">
+        <h1>O que é a Comissão Nacional de Mondioring (CNM)?</h1>
+            <div class="cnm">
+                <img src="assets/cna.png" alt="">
+                <img src="assets/cbck.png" alt="">
+                <img src="assets/fci.png" alt="">
+            </div>
+        </div>
+        <div class="texto1">
+        <p>A Comissão Nacional de Mondioring é o órgão gestor oficial do esporte no Brasil. A CNM tem como responsabilidade o planejamento do calendário de provas, formação dos juízes da modalidade, formação e gestão de figurantes oficiais, divulgação do esporte e apoio aos clubes oficiais.</p>
+            <p>No final de 2018, a Confederação Brasileira de Cinofilia – CBKC, reestruturou a Comissão Nacional de Adestramento - CNA, criando comissões para os esportes caninos homologados pela Federação Cinófila Internacional – FCI, quais sejam, IGP, Agility, Obedience e o Mondioring.</p>
+            <p>Em fevereiro de 2019, após eleição feita com os participantes que tiveram cães titulados no esporte nos anos anteriores, foi criada a Comissão Nacional de Mondioring – CNM, tendo como coordenador eleito Luís Campanhã e como vice coordenador, Charles-Eric Valle. A partir deles, foram nomeados outros participantes, que já vinham atuando isoladamente na organização de provas, para somar esforços e compor a primeira formação da referida comissão, com a missão de estruturar o Mondioring no Brasil e formar as bases para as diretorias subsequentes.</p>
+        </div>
     </div>
     
     <script src="script.js"></script>
