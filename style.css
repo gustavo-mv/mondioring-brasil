@@ -319,7 +319,7 @@ header {
     transform: scale(1.2);
 }
 .caixa img{
-    height: 10rem;
+    width:  50%;
     transition: 3s;
 }
 
@@ -394,7 +394,7 @@ header {
 @media (max-width: 900px) {
 
     body {
-      overflow: auto;
+      overflow: auto;    
     }
     .nav{
         width: 100%;
@@ -407,10 +407,36 @@ header {
     .nav-itens{
         display: none;
     }
+    .patrocinadores{
+        width: 10%;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-patrocinadores{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .img-patrocinadores img{
+        max-width: 3rem;
+        margin: 0.3rem;
+    }
+    .nav-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 30%;
+      }
     .menu-ham{
         height: 100%;
         padding-top: 2.5rem;
-        width: 15%;
+        width: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -425,6 +451,7 @@ header {
     .introducoes{
         position: relative;
         height: 45rem;
+        margin-top: 10%;
     }
     .container-esquerdo-intro{
         position: absolute;
@@ -438,6 +465,10 @@ header {
         width: 100%;
         position: absolute;
     }
+    .botoes-bemvindo{
+        display: flex;
+        align-items: center;
+    }
 .tipos{
     display: flex;
     flex-direction: column;
@@ -448,7 +479,7 @@ header {
 .caixa{
     padding: 2rem;
     display: flex;
-    width: 70%;
+    width: 60%;
     justify-content: center;
     align-items: center;
     margin: 2rem;
@@ -491,8 +522,8 @@ header {
     flex-direction: column;
     align-items: center;
 }
-.sobre-informa p{
-    width: 40%;
+.sobre-a-cnm p, .texto1{
+    width: 80%;
     font-size: 1.5rem;
 }
 .wrapper{
