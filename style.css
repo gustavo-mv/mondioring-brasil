@@ -258,7 +258,7 @@ header {
     position: relative;
     height: 27rem;
     width: 129rem;
-    background-color: red;
+    background-color: black;
 }
 #videosobre{
     height: 100%;
@@ -489,20 +489,22 @@ header {
 
 .banner-cnm{
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 40rem;
+    height: 35rem;
     width: 100%;
 }
 .banner-cnm h1{
     position: relative;
-    bottom: 13rem;
+    left: 3rem;
+    bottom: 10rem;
     display: block;
     font-size: 2rem;
     margin-top: 0;
 }
 .cnm{
-    top: 3rem;
+    top: 2rem;
     right: 3rem;
 }
 
@@ -517,6 +519,7 @@ header {
     align-items: center;
     align-content: center;
 }
+
 .texto1{
     display: flex;
     flex-direction: column;
@@ -532,11 +535,35 @@ header {
 
 .historico{
     width: 100%;
+    height: 20rem;
+    background-image: url(assets/flag.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-.historico .historico-titulo{
+.historico-titulo{
+    display: flex;
+
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    height: 20rem;
+    color: black;
     font-size: 1.2rem;
     padding: 2rem;
 }
+
+.historico .historico-titulo span{
+    background-color: yellow;
+    border: 2px yellow solid;
+}
+
+.historico p, .historico h4{
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+.historico h4{
+    text-align: center;
+}
+
 
 }
