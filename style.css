@@ -409,7 +409,7 @@ header {
         display: none;
     }
     .patrocinadores{
-        width: 10%;
+        width: 20%;
         margin-right: 0.5rem;
         margin-bottom: 1rem;
         font-size: 0.5rem;
@@ -435,8 +435,6 @@ header {
         width: 30%;
       }
     .menu-ham{
-        position: relative;
-        right: 2rem;
         height: 100%;
         padding-top: 2.3rem;
         width: 20%;
@@ -467,6 +465,9 @@ header {
         height: 100%;
         width: 100%;
         position: absolute;
+    }
+    #bem-vindo{
+        width: 100%;
     }
     .botoes-bemvindo{
         display: flex;
@@ -500,9 +501,8 @@ header {
 }
 .banner-cnm h1{
     position: relative;
-    left: 3rem;
-    bottom: 10rem;
-    display: block;
+    bottom: 12rem;
+    text-align: center;
     font-size: 2rem;
     margin-top: 0;
 }
@@ -563,10 +563,95 @@ header {
 .historico p, .historico h4{
     font-size: 1.2rem;
     margin: 1rem;
+    text-align: center;
 }
 .historico h4{
     text-align: center;
 }
-
+.container-gestao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.gestao{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: rgb(1, 6, 63);
+}
+.info{
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.info h1{
+    font-size: 1.5rem;
+}
+.info p{
+    font-size: 0.9rem;
+}
+.perfil{
+    height: 20rem;
+    width: 100%;
+    border-radius: 10px;
+}
+.card:nth-child(1) .perfil{
+    border-radius: 10px;
+    padding: 0;
+    background-image: url(assets/people/Cristiane.jpg);
+    max-width: 20rem;
+    background-position: center;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.card:nth-child(2) .perfil{
+    border-radius: 10px;
+    background-image: url(assets/people/Rodrigo.jpeg);
+    max-width: 20rem;
+    background-position: center;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.card:nth-child(3) .perfil{
+    border-radius: 10px;
+    background-image: url(assets/people/Eduardo.jpg);
+    max-width: 20rem;
+    background-position: center;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.card:nth-child(4) .perfil{
+    border-radius: 10px;
+    background-image: url(assets/people/andrigo.jpg);
+    max-width: 20rem;
+    background-position: center;
+    background-size: 30rem;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.card:nth-child(5) .perfil{
+    border-radius: 10px;
+    background-image: url(assets/people/CesarBeux.jpg);
+    max-width: 20rem;
+    background-position: center;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
 
 }
