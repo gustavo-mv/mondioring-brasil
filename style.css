@@ -424,7 +424,7 @@ header {
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 2rem;
 }
 
@@ -437,7 +437,6 @@ header {
 .historico p, .historico h4{
     font-size: 1.2rem;
     margin: 1rem;
-    text-align: center;
 }
 .historico h4{
     text-align: center;
@@ -448,14 +447,26 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+}
+.container-gestao h1{
+    text-align: center;
 }
 .ex-gestao{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-}
+        width: 50rem;
+        display: flex;
+        justify-content: center;
+        border-color: black;
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        margin-bottom: 3rem;
+    }
+    .ex-gestao h4{
+        margin: 3rem;
+    }
 
 .gestao{
+    margin-top: 3rem;
     width: 60rem;
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -552,7 +563,7 @@ footer img{
 }
 .logo-footer img{
     margin-top: 2rem;
-    width: 15vw;
+    max-width: 15rem;    
 }
 .sociais{
     display: flex;
@@ -732,8 +743,13 @@ footer img{
     background-color: rgba(0,0,0,0.3);
     height: 20rem;
     color: black;
-    font-size: 1.2rem;
     padding: 2rem;
+}
+.historico-titulo h1{
+    margin-left: 1rem;
+}
+.wrapper:last-child h1{
+    font-size: 2rem;
 }
 
 .historico .historico-titulo span{
@@ -745,7 +761,6 @@ footer img{
 .historico p, .historico h4{
     font-size: 1.2rem;
     margin: 1rem;
-    text-align: center;
 }
 
 .container-gestao{
