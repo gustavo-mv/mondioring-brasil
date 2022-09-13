@@ -1,132 +1,616 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-p{
-    font-weight: 100;
+p {
+  font-weight: 100;
 }
-body{
-        background-color: gainsboro;
+body {
+  background-color: gainsboro;
 }
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 header {
-    background-color: rgb(1, 6, 63);
+  background-color: rgb(1, 6, 63);
 }
 
-.nav{
-    box-shadow: 0px 0px 8px 0px black;
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: fixed;
-    background-color: rgb(1, 6, 63);
-    transition: .5s ease-in-out;
-    z-index: 5;
+.nav {
+  box-shadow: 0px 0px 8px 0px black;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  background-color: rgb(1, 6, 63);
+  transition: 0.5s ease-in-out;
+  z-index: 5;
 }
 
-.nav-logo{
+.nav-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   width: 20%;
 }
-.menu-ham{
-    width: 15%;
-    display: none;
+.menu-ham {
+  width: 15%;
+  display: none;
 }
-.dropdown-info, .dropdown-cadastro{
-    display: none;
-    position: absolute;
-}
-
-.dropdown-info a, .dropdown-cadastro a{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    color: black;
-    padding: 0.8rem;
-    transition: .2s;
-}
-.dropdown-info a:hover , 
-.dropdown-cadastro a:hover{
-    border-radius: 4px;
-    background-color: yellow;
-    padding: 0.8rem;
+.dropdown-info,
+.dropdown-cadastro {
+  display: none;
+  position: absolute;
 }
 
-.nav ul li:hover:nth-child(2) .dropdown-info ,
- .nav ul li:hover:nth-child(3) .dropdown-cadastro{
-    top: 2rem;
-    left: -1rem;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    text-align: center;
-    background-color: white;
-    border-radius: 7px;
-    width: 14rem;
-    z-index: 2;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  .nav ul li:hover:nth-child(3) .dropdown-cadastro{
+.dropdown-info a,
+.dropdown-cadastro a {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding: 0.8rem;
+  transition: 0.2s;
+}
+.dropdown-info a:hover,
+.dropdown-cadastro a:hover {
+  border-radius: 4px;
+  background-color: yellow;
+  padding: 0.8rem;
+}
+
+.nav ul li:hover:nth-child(2) .dropdown-info,
+.nav ul li:hover:nth-child(3) .dropdown-cadastro {
+  top: 2rem;
+  left: -1rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  border-radius: 7px;
+  width: 14rem;
+  z-index: 2;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.nav ul li:hover:nth-child(3) .dropdown-cadastro {
   top: 2rem;
 }
-.nav-logo img{
-    padding: 1rem;
-    width: 80%;
+.nav-logo img {
+  padding: 1rem;
+  width: 80%;
 }
 
-.nav-itens{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+.nav-itens {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
-.nav-itens li img{
-    opacity: 0;
-    width: 2.5rem;
-    position: relative;
-    right: 0.1rem;
-    transform: rotate(20deg);
-    transition: 0.2s ease-in-out;
+.nav-itens li img {
+  opacity: 0;
+  width: 2.5rem;
+  position: relative;
+  right: 0.1rem;
+  transform: rotate(20deg);
+  transition: 0.2s ease-in-out;
 }
 
-.nav-itens li{
-    cursor: pointer;
-    font-size: 1.2rem; 
+.nav-itens li {
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  margin: 1rem;
+}
+.nav-itens li:hover > img {
+  opacity: 1;
+}
+.nav-itens li:first-child {
+  position: relative;
+  left: 2rem;
+}
+.nav-itens li:nth-child(3) {
+  white-space: nowrap;
+  right: 0.5rem;
+}
+.nav-itens li:last-child {
+  position: relative;
+  right: 3rem;
+}
+.patrocinadores {
+  width: 20%;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-patrocinadores {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.img-patrocinadores img {
+  max-width: 4rem;
+  margin: 0.3rem;
+}
+.introducoes {
+  padding-top: 5rem;
+  position: relative;
+  background-color: rgb(9, 9, 110);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container-esquerdo-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  padding: 0;
+}
+.container-direito-intro {
+  overflow: hidden;
+  height: 40rem;
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mondi {
+  background-color: yellow;
+  color: rgb(4, 4, 73);
+}
+#bem-vindo {
+  max-width: 600px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.botoes-bemvindo {
+  margin: 1.3rem;
+}
+.botoes-bemvindo button {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.botoes-bemvindo button:hover {
+  transform: scale(1.1);
+}
+.botoes-bemvindo button:first-child {
+  font-family: inherit;
+  color: rgb(4, 4, 73);
+  border-radius: 10px;
+  background-color: yellow;
+  border: 1px black;
+  height: 50px;
+  width: 100px;
+}
+.botoes-bemvindo button:last-child {
+  margin: 1rem;
+  font-family: inherit;
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 3px white solid;
+  height: 50px;
+  width: 140px;
+}
+.fotos-inicio {
+  height: 100%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.fotos-inicio img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+#fotos img {
+  opacity: 0;
+  transition: opacity 1100ms;
+}
+
+#fotos img.selected {
+  opacity: 1;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.sobre-titulo {
+  margin: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.intro-video {
+  color: yellow;
+  font-size: 3rem;
+  position: relative;
+  height: 27rem;
+  width: 129rem;
+  background-color: black;
+}
+#videosobre {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+}
+.sobre-informa {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.texto1 {
+  margin: 3rem;
+  width: 50rem;
+}
+
+.tipos {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  justify-content: center;
+}
+.caixa {
+  padding: 2rem;
+  display: flex;
+  width: 22rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  transition: 0.4s;
+  background-color: rgb(163, 163, 24);
+}
+.caixa p {
+  cursor: default;
+}
+.caixa:hover {
+  background-color: yellow;
+  box-shadow: 0px 0px 13px 1px #000000;
+}
+.caixa:hover > img {
+  transform: scale(1.2);
+}
+.caixa img {
+  width: 50%;
+  transition: 3s;
+}
+
+.sobre-a-cnm {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.cnm {
+  display: flex;
+}
+.banner-cnm {
+  overflow: hidden;
+  height: 23rem;
+  padding: 2rem;
+  position: relative;
+  height: 27rem;
+  width: 129rem;
+  background-color: black;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(1, 6, 63);
+}
+
+.banner-cnm h1 {
+  color: white;
+  max-width: 30rem;
+  font-size: 3rem;
+}
+
+.cnm {
+  position: relative;
+  width: 20rem;
+}
+.cnm img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  min-height: 10px;
+  max-height: 13rem;
+  z-index: 0;
+  background-color: white;
+  border-radius: 200px;
+}
+.cnm img:nth-child(1) {
+  bottom: -1rem;
+  right: 0;
+}
+.cnm img:nth-child(2) {
+  bottom: -12rem;
+  right: -6rem;
+}
+.cnm img:nth-child(3) {
+  bottom: -12rem;
+  right: 6rem;
+}
+
+.sobre-a-cnm .texto1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.sobre-a-cnm .texto1 p {
+  font-size: 1.3rem;
+  max-width: 60rem;
+  margin: 1rem;
+}
+
+.historico {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.historico-titulo {
+  background-image: url(assets/flag.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  position: relative;
+  height: 27rem;
+  width: 129rem;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+.historico .historico-titulo span {
+  background-color: yellow;
+  border: 2px yellow solid;
+}
+
+.historico p,
+.historico h4 {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+.historico h4 {
+  text-align: center;
+}
+
+.container-gestao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.container-gestao h1 {
+  text-align: center;
+}
+.ex-gestao {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  margin-bottom: 3rem;
+}
+.ex-gestao h4 {
+  margin: 3rem;
+}
+
+.gestao {
+  margin-top: 3rem;
+  width: 60rem;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.card {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: rgb(1, 6, 63);
+}
+.info {
+  height: 6rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.info h1 {
+  font-size: 1.5rem;
+}
+.info p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 100%;
+}
+.perfil {
+  height: 100%;
+  width: 50%;
+  border-radius: 10px 0px 0px 10px;
+}
+.card:nth-child(1) .perfil {
+  padding: 0;
+  background-image: url(assets/people/daniel.jpeg);
+  background-size: 27rem;
+  max-width: 20rem;
+  background-position: 35% 50%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.card:nth-child(2) .perfil {
+  padding: 0;
+  background-image: url(assets/people/carlos.jpeg);
+  background-size: 20rem;
+  max-width: 20rem;
+  background-position: 35% 50%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.card:nth-child(3) .perfil {
+  padding: 0;
+  background-image: url(assets/people/Cristiane.jpg);
+  background-size: 15rem;
+  max-width: 20rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.card:nth-child(4) .perfil {
+  background-image: url(assets/people/Rodrigo.jpeg);
+  max-width: 20rem;
+  background-position: 50% 20%;
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.card:nth-child(5) .perfil {
+  background-image: url(assets/people/Eduardo.jpg);
+  max-width: 20rem;
+  background-position: 50% 0%;
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.card:nth-child(6) .perfil {
+  background-image: url(assets/people/andrigo.jpg);
+  max-width: 20rem;
+  background-position: 40% 10%;
+  background-size: 30rem;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.card:nth-child(7) .perfil {
+  background-image: url(assets/people/CesarBeux.jpg);
+  max-width: 20rem;
+  background-position: 50% 20%;
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  background-color: white;
+}
+footer img {
+  margin: 1rem;
+}
+.logo-footer img {
+  margin-top: 2rem;
+  max-width: 15rem;
+}
+.sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 1rem;
+}
+
+.sociais img {
+  width: 2.3rem;
+}
+
+/* ============== RESPONSIVO =========== */
+@media (max-width: 900px) {
+  body {
+    overflow: auto;
+  }
+  .nav {
+    overflow: hidden;
+    width: 100%;
     display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 10rem;
-    margin: 1rem;
-}
-.nav-itens li:hover > img{
-    opacity: 1;
-}
-.nav-itens li:first-child{ 
-    position: relative;
-    left: 2rem;
-}
-.nav-itens li:nth-child(3){ 
-    white-space: nowrap;
-    right: 0.5rem;
-}
-.nav-itens li:last-child{ 
-    position: relative;
-    right: 3rem;
-}
-.patrocinadores{
+    justify-content: space-between;
+  }
+  .nav-logo img {
+    width: 8rem;
+  }
+  .nav-itens {
+    display: none;
+  }
+  .patrocinadores {
     width: 20%;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
@@ -135,646 +619,176 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.img-patrocinadores{
+  }
+  .img-patrocinadores {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.img-patrocinadores img{
-    max-width: 4rem;
+  }
+  .img-patrocinadores img {
+    max-width: 2.8rem;
     margin: 0.3rem;
-}
-.introducoes{
-    padding-top: 5rem;
-    position: relative;
-    background-color: rgb(9, 9, 110);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.container-esquerdo-intro{
+  }
+  .nav-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50rem;
-    padding: 0;
-}
-.container-direito-intro{
-    overflow: hidden;
-    height: 40rem;
-    width: 80rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#mondi{
-    background-color: yellow;
-    color: rgb(4, 4, 73);
-}
-#bem-vindo{
-    max-width: 600px;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-}
-
-.botoes-bemvindo{
-    margin: 1.3rem;
-   
-}
-.botoes-bemvindo button{
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-}
-.botoes-bemvindo button:hover{
-    transform: scale(1.1);
-}
-.botoes-bemvindo button:first-child{
-    font-family: inherit;
-    color: rgb(4, 4, 73);
-    border-radius: 10px;
-    background-color: yellow;
-    border: 1px black;
-    height: 50px;
-    width: 100px;
-}
-.botoes-bemvindo button:last-child{
-    margin: 1rem;
-    font-family: inherit;
-    color: white;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 3px white solid;
-    height: 50px;
-    width: 140px;
-}
-.fotos-inicio{
-    height: 100%;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.fotos-inicio img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-}
-
-#fotos img{
-    opacity: 0;
-    transition: opacity 1100ms;
-}
-
-#fotos img.selected { 
-    opacity: 1;
-}
-
-.sobre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.sobre-titulo{
-    margin: 3rem;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.intro-video{
-    color: yellow;
-    font-size: 3rem;
-    position: relative;
-    height: 27rem;
-    width: 129rem;
-    background-color: black;
-}
-#videosobre{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(0,0,0, 0.4);
-    bottom: 0;
-}
-.sobre-informa{
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-}
-.texto1 {
-    margin: 3rem;
-    width: 50rem;
-}
-
-.tipos{
-    display: flex;
-    flex-direction: row;
-
-    width: 100%;
-    justify-content: center;
-}
-.caixa{
-    padding: 2rem;
-    display: flex;
-    width: 22rem;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    transition: .4s;
-    background-color: rgb(163, 163, 24);
-}
-.caixa p{
-    cursor: default;
-}
-.caixa:hover{
-    background-color: yellow;
-    box-shadow: 0px 0px 13px 1px #000000;
-}
-.caixa:hover > img{
-    transform: scale(1.2);
-}
-.caixa img{
-    width:  50%;
-    transition: 3s;
-}
-
-.sobre-a-cnm{
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.cnm{
-    display: flex;
-}
-.banner-cnm{
-    overflow: hidden;
-    height: 23rem;
-    padding: 2rem;
-    position: relative;
-    height: 27rem;
-    width: 129rem;
-    background-color: black;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    display: flex;
-    background-color: rgb(1, 6, 63);
-}
-
-.banner-cnm h1{
-    color: white;
-    max-width: 30rem;
-    font-size: 3rem;
-}
-
-.cnm{
-    position: relative;
-    width: 20rem;
-}
-.cnm img{
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    min-height: 10px;
-    max-height: 13rem;
-    z-index: 0;
     background-color: white;
-    border-radius: 200px;
-}
-.cnm img:nth-child(1){
-    bottom: -1rem;
-    right: 0;
-}
-.cnm img:nth-child(2){
-    bottom: -12rem;
-    right: -6rem;
-}
-.cnm img:nth-child(3){
-    bottom: -12rem;
-    right: 6rem;
-}
-
-.sobre-a-cnm .texto1{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.sobre-a-cnm .texto1 p{
-    font-size: 1.3rem;
-    max-width: 60rem;
-    margin: 1rem;
-}
-
-.historico{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.historico-titulo{
-    background-image: url(assets/flag.jpg);
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    position: relative;
-    height: 27rem;
-    width: 129rem;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 1.4rem;
-    padding: 2rem;
-}
-
-.historico .historico-titulo span{
-    background-color: yellow;
-    border: 2px yellow solid;
-    
-}
-
-.historico p, .historico h4{
-    font-size: 1.2rem;
-    margin: 1rem;
-}
-.historico h4{
-    text-align: center;
-}
-
-.container-gestao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-}
-.container-gestao h1{
-    text-align: center;
-}
-.ex-gestao{
-        width: 50rem;
-        display: flex;
-        justify-content: center;
-        border-color: black;
-        border-style: solid;
-        border-width: 0px 0px 1px 0px;
-        margin-bottom: 3rem;
-    }
-    .ex-gestao h4{
-        margin: 3rem;
-    }
-
-.gestao{
-    margin-top: 3rem;
-    width: 60rem;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-}
-.card{
-    height: 15rem;
-    display: flex;
-    align-items: center;
-    color: white;
-    margin: 1rem;
-    border-radius: 10px;
-    background-color: rgb(1, 6, 63);
-}
-.info{
-    height: 6rem;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.info h1{
-    font-size: 1.5rem;
-}
-.info p{
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 100%;
-}
-.perfil{
-    height: 100%;
-    width: 50%;
-    border-radius: 10px 0px 0px 10px;
-}
-.card:nth-child(1) .perfil{
-    padding: 0;
-    background-image: url(assets/people/Cristiane.jpg);
-    background-size: 15rem;
-    max-width: 20rem;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-.card:nth-child(2) .perfil{
-
-    background-image: url(assets/people/Rodrigo.jpeg);
-    max-width: 20rem;
-    background-position: 50% 20%;
-    background-size: 20rem;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-.card:nth-child(3) .perfil{
-    background-image: url(assets/people/Eduardo.jpg);
-    max-width: 20rem;
-    background-position: 50% 0%;
-    background-size: 20rem;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-.card:nth-child(4) .perfil{
-    background-image: url(assets/people/andrigo.jpg);
-    max-width: 20rem;
-    background-position: 40% 10%;
-    background-size: 30rem;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-.card:nth-child(5) .perfil{
-    background-image: url(assets/people/CesarBeux.jpg);
-    max-width: 20rem;
-    background-position: 50% 20%;
-    background-size: 20rem;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-
-footer{
-    margin-top: 2rem;
-    padding-bottom: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 1rem;
-    background-color: white;
-
-}
-footer img{
-    margin: 1rem;
-}
-.logo-footer img{
-    margin-top: 2rem;
-    max-width: 15rem;    
-}
-.sociais{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 30%;
-    margin-bottom: 1rem;
-}
-
-.sociais img{
-    width: 2.3rem;
-}
-
-/* ============== RESPONSIVO =========== */ 
-@media (max-width: 900px) {
-
-    body {
-      overflow: auto;    
-    }
-    .nav{
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .nav-logo img{
-        width: 8rem;
-    }
-    .nav-itens{
-        display: none;
-    }
-    .patrocinadores{
-        width: 20%;
-        margin-right: 0.5rem;
-        margin-bottom: 1rem;
-        font-size: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .img-patrocinadores{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .img-patrocinadores img{
-        max-width: 2.8rem;
-        margin: 0.3rem;
-    }
-    .nav-logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        width: 30%;
-      }
-    .menu-ham{
-        height: 100%;
-        padding-top: 2.3rem;
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .menu-ham span{
-        background-color: white;
-        margin: 5px;
-        border-radius: 20px;
-        width: 3rem;
-        height: 0.4rem;
-    }
-    .introducoes{
-        position: relative;
-        height: 50rem;
-        padding-top: 10%;
-    }
-    .container-esquerdo-intro{
-        position: absolute;
-        height: 100%;
-        background-color: rgba(0,0,0,0.4);
-        width: 100%;
-        z-index: 4;
-    }
-    .container-direito-intro{
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
-    #bem-vindo{
-        width: 100%;
-    }
-    .botoes-bemvindo{
-        display: flex;
-        align-items: center;
-    }
-    .sobre-titulo{
-        font-size: 1rem;
-        height: 5rem;
-    
-    }
-.tipos{
+  }
+  .menu-ham {
+    height: 100%;
+    padding-top: 2.3rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-ham span {
+    background-color: white;
+    margin: 5px;
+    border-radius: 20px;
+    width: 3rem;
+    height: 0.4rem;
+  }
+  .introducoes {
+    position: relative;
+    height: 50rem;
+    padding-top: 10%;
+  }
+  .container-esquerdo-intro {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 4;
+  }
+  .container-direito-intro {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  #bem-vindo {
+    width: 100%;
+  }
+  .botoes-bemvindo {
+    display: flex;
+    align-items: center;
+  }
+  .sobre-titulo {
+    font-size: 1rem;
+    height: 5rem;
+  }
+  .tipos {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
     width: 100%;
-}
-.caixa{
+  }
+  .caixa {
     padding: 2rem;
     display: flex;
     width: 60%;
     justify-content: center;
     align-items: center;
     margin: 2rem;
-    transition: .4s;
+    transition: 0.4s;
     background-color: rgb(163, 163, 24);
-}
+  }
 
-.banner-cnm{
+  .banner-cnm {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 35rem;
     width: 100%;
-}
-.banner-cnm h1{
+  }
+  .banner-cnm h1 {
     position: relative;
     bottom: 12rem;
     text-align: center;
     font-size: 2rem;
     margin-top: 0;
-}
-.cnm{
+  }
+  .cnm {
     top: 2rem;
     right: 3rem;
-}
+  }
 
-.sobre-titulo{
+  .sobre-titulo {
     padding-top: 2rem;
-
-}
-.sobre-informa,.sobre-a-cnm{
+  }
+  .sobre-informa,
+  .sobre-a-cnm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-}
+  }
 
-.texto1{
+  .texto1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.sobre-a-cnm p, .texto1{
+  }
+  .sobre-a-cnm p,
+  .texto1 {
     width: 80%;
     font-size: 1.5rem;
-}
-.wrapper{
+  }
+  .wrapper {
     font-size: 2rem;
-}
+  }
 
-.historico{
+  .historico {
     width: 100%;
+  }
 
-}
-
-.historico-titulo{
+  .historico-titulo {
     background-image: url(assets/flag.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     width: 100%;
     align-items: center;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 20rem;
     color: black;
     padding: 2rem;
-}
-.historico-titulo h1{
+  }
+  .historico-titulo h1 {
     margin-left: 1rem;
-}
-.wrapper:last-child h1{
+  }
+  .wrapper:last-child h1 {
     font-size: 2rem;
-}
+  }
 
-.historico .historico-titulo span{
+  .historico .historico-titulo span {
     background-color: yellow;
     border: 2px yellow solid;
+  }
 
-}
-
-.historico p, .historico h4{
+  .historico p,
+  .historico h4 {
     font-size: 1.2rem;
     margin: 1rem;
-}
+  }
 
-.container-gestao{
+  .container-gestao {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-}
-.gestao{
+  }
+  .gestao {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-}
-.card{
+  }
+  .card {
     height: 50vw;
     display: flex;
     flex-direction: column;
@@ -783,30 +797,50 @@ footer img{
     margin: 1rem;
     border-radius: 10px;
     background-color: rgb(1, 6, 63);
-}
-.info{
+  }
+  .info {
     height: 6rem;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-.info h1{
+  }
+  .info h1 {
     font-size: 5vw;
-}
-.info p{
+  }
+  .info p {
     display: block;
     width: 100%;
     word-wrap: break-word;
     text-align: center;
     font-size: 100%;
-}
-.perfil{
+  }
+  .perfil {
     height: 20rem;
     width: 100%;
-}
-.card:nth-child(1) .perfil{
+  }
+  .card:nth-child(1) .perfil {
+    border-radius: 0px 0px 10px 10px;
+    padding: 0;
+    background-image: url(assets/people/daniel.jpeg);
+    background-size: 27rem;
+    max-width: 20rem;
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  .card:nth-child(2) .perfil {
+    border-radius: 0px 0px 10px 10px;
+    padding: 0;
+    background-image: url(assets/people/carlos.jpeg);
+    background-size: 20rem;
+    max-width: 20rem;
+    background-position: 35% 15%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  .card:nth-child(3) .perfil {
     border-radius: 0px 0px 10px 10px;
     padding: 0;
     background-image: url(assets/people/Cristiane.jpg);
@@ -815,8 +849,8 @@ footer img{
     background-size: 57vw;
     background-repeat: no-repeat;
     object-fit: cover;
-}
-.card:nth-child(2) .perfil{
+  }
+  .card:nth-child(4) .perfil {
     border-radius: 0px 0px 10px 10px;
     background-image: url(assets/people/Rodrigo.jpeg);
     max-width: 20rem;
@@ -824,8 +858,8 @@ footer img{
     background-size: 20rem;
     background-repeat: no-repeat;
     object-fit: cover;
-}
-.card:nth-child(3) .perfil{
+  }
+  .card:nth-child(5) .perfil {
     border-radius: 0px 0px 10px 10px;
     background-image: url(assets/people/Eduardo.jpg);
     max-width: 20rem;
@@ -833,8 +867,8 @@ footer img{
     background-size: 20rem;
     background-repeat: no-repeat;
     object-fit: cover;
-}
-.card:nth-child(4) .perfil{
+  }
+  .card:nth-child(6) .perfil {
     border-radius: 0px 0px 10px 10px;
     background-image: url(assets/people/andrigo.jpg);
     max-width: 20rem;
@@ -842,8 +876,8 @@ footer img{
     background-size: 30rem;
     background-repeat: no-repeat;
     object-fit: cover;
-}
-.card:nth-child(5) .perfil{
+  }
+  .card:nth-child(7) .perfil {
     border-radius: 0px 0px 10px 10px;
     background-image: url(assets/people/CesarBeux.jpg);
     max-width: 20rem;
@@ -851,14 +885,162 @@ footer img{
     background-size: 20rem;
     background-repeat: no-repeat;
     object-fit: cover;
-}
+  }
 
-.logo-footer img{
+  .logo-footer img {
     padding-top: 2rem;
     width: 40vw;
+  }
+
+  .sociais img {
+    width: 7vw;
+  }
 }
 
-.sociais img{
-    width: 7vw; 
+/* ========================= PÁGINA DE CADASTRO =========================================*/
+/* ========================= PÁGINA DE CADASTRO =========================================*/
+/* ========================= PÁGINA DE CADASTRO =========================================*/
+/* ========================= PÁGINA DE CADASTRO =========================================*/
+#bodyCad {
+  background-image: url(/assets/home4.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100vh;
 }
+.telacad {
+  height: 90vh;
+  border-radius: 20px;
+  margin-top: 1.5%;
+  margin-left: 25%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.telacad img:first-child {
+  margin-top: 5%;
+  background-color: white;
+  width: 40%;
+}
+.telacad select {
+  font-size: 1.5vw;
+  height: 10vh;
+  margin: 3%;
+  margin-bottom: 5%;
+  background-color: white;
+  width: 40%;
+}
+.telacad select:last-child {
+  margin-top: 0;
+  margin-bottom: 10%;
+  background-color: white;
+  width: 60%;
+}
+.categoria {
+  font-size: 2vw;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+}
+input.check {
+  height: 3.5vw;
+  width: 3.5vh;
+}
+
+.telacad h3 {
+  font-size: 2vw;
+  margin-top: 5%;
+  background-color: white;
+}
+.caixaCad {
+  border-radius: 3px;
+  margin: 0.5vw;
+  padding: 1vw;
+  margin-bottom: 0;
+  background-color: navy;
+  color: white;
+}
+#submit {
+  padding: 1rem;
+  width: 50%;
+  font-size: 1.2vw;
+  margin: 5%;
+  margin-top: 1%;
+  background-color: rgb(195, 195, 17);
+  border-radius: 10px;
+  border: 0;
+  transition: 0.3s;
+}
+#submit:hover {
+  background-color: yellow;
+}
+@media (max-width: 900px) {
+  .telacad {
+    border-radius: 20px;
+    margin-left: 25%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .telacad img:first-child {
+    margin-top: 10%;
+    background-color: white;
+    width: 60%;
+  }
+  .telacad select {
+    font-size: 100%;
+    height: 10vh;
+    margin: 3%;
+    margin-bottom: 5%;
+    background-color: white;
+    width: 80%;
+  }
+  .telacad select:last-child {
+    margin-top: 0;
+    margin-bottom: 10%;
+    background-color: white;
+    width: 60%;
+  }
+  .categoria {
+    font-size: 4.6vw;
+    margin-bottom: 8%;
+    display: flex;
+    flex-direction: row;
+  }
+  input.check {
+    height: 3.5vw;
+    width: 3.5vh;
+  }
+  .telacad h3 {
+    font-size: 4.6vw;
+    margin-top: 10%;
+    background-color: white;
+    width: 60%;
+  }
+  .caixaCad {
+    border-radius: 3px;
+    margin: 0.5vw;
+    padding: 1vw;
+    margin-bottom: 0;
+    background-color: navy;
+    color: white;
+  }
+  #submit {
+    width: 90%;
+    margin: 10%;
+    margin-top: 5%;
+    font-size: 100%;
+    background-color: rgb(195, 195, 17);
+    border-radius: 10px;
+    border: 0;
+    transition: 0.3s;
+  }
+  #submit:hover {
+    background-color: yellow;
+  }
 }
