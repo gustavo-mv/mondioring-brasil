@@ -902,7 +902,7 @@ footer img {
 /* ========================= PÁGINA DE CADASTRO =========================================*/
 /* ========================= PÁGINA DE CADASTRO =========================================*/
 #bodyCad {
-  background-image: url(/assets/home4.jpg);
+  background-image: url(assets/home4.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -979,8 +979,9 @@ input.check {
 }
 @media (max-width: 900px) {
   .telacad {
+    width: 90%;
     border-radius: 20px;
-    margin-left: 25%;
+    margin-left: 5%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -1017,10 +1018,9 @@ input.check {
     width: 3.5vh;
   }
   .telacad h3 {
-    font-size: 4.6vw;
+    font-size: 1.4rem;
     margin-top: 10%;
     background-color: white;
-    width: 60%;
   }
   .caixaCad {
     border-radius: 3px;
