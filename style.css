@@ -6,6 +6,7 @@
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 p {
   font-weight: 100;
@@ -955,6 +956,7 @@ input.check {
   margin-top: 5%;
   background-color: white;
 }
+
 .caixaCad {
   border-radius: 3px;
   margin: 0.5vw;
@@ -977,6 +979,7 @@ input.check {
 #submit:hover {
   background-color: yellow;
 }
+
 @media (max-width: 900px) {
   .telacad {
     width: 90%;
@@ -1043,4 +1046,72 @@ input.check {
   #submit:hover {
     background-color: yellow;
   }
+}
+
+/*====================== Tela de Login =============== */
+/*====================== Tela de Login =============== */
+/*====================== Tela de Login =============== */
+/*====================== Tela de Login =============== */
+#containerVideoBG {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+}
+
+#bgVideoLogin {
+  width: inherit;
+  height: inherit;
+  -o-filter: blur(5px);
+  filter: blur(3px);
+  object-fit: cover;
+  transform: scale(1.06);
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.containerLogin {
+  border-radius: 15px;
+  padding: 4rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.containerLogin input {
+  margin: 1vh;
+  height: 3rem;
+  width: 100%;
+  border: transparent;
+  border-radius: 5px;
+}
+.botoesLogin {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#entrar {
+  background-color: rgb(167, 167, 3);
+  transition: 0.5s;
+  cursor: pointer;
+}
+#entrar:hover {
+  background-color: yellow;
+  transform: scale(1.1);
+}
+.containerLogin img {
+  border-radius: 10px;
+  width: 30vh;
+}
+.loginInputs {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
 }
