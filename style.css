@@ -898,10 +898,10 @@ footer img {
   }
 }
 
-/* ========================= PÁGINA DE CADASTRO =========================================*/
-/* ========================= PÁGINA DE CADASTRO =========================================*/
-/* ========================= PÁGINA DE CADASTRO =========================================*/
-/* ========================= PÁGINA DE CADASTRO =========================================*/
+/* ========================= PÁGINA DE CADASTRO  DE EVENTO =========================================*/
+/* ========================= PÁGINA DE CADASTRO  DE EVENTO =========================================*/
+/* ========================= PÁGINA DE CADASTRO  DE EVENTO =========================================*/
+/* ========================= PÁGINA DE CADASTRO  DE EVENTO =========================================*/
 #bodyCad {
   background-image: url(assets/home4.jpg);
   background-repeat: no-repeat;
@@ -913,7 +913,6 @@ footer img {
   height: 90vh;
   border-radius: 20px;
   margin-top: 1.5%;
-  margin-left: 25%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -975,6 +974,7 @@ input.check {
   border-radius: 10px;
   border: 0;
   transition: 0.3s;
+  cursor: pointer;
 }
 #submit:hover {
   background-color: yellow;
@@ -1086,6 +1086,7 @@ form {
   background-color: rgba(255, 255, 255, 0.7);
 }
 .containerLogin input {
+  text-align: center;
   margin: 1vh;
   height: 3rem;
   width: 100%;
