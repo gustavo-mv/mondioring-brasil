@@ -1133,6 +1133,17 @@ form {
   grid-template-columns: 25rem 25rem 25rem;
   margin-left: 10vw;
 }
+.formulario .perguntasCad div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.formulario .perguntasCad div label {
+  width: 4rem;
+  margin-right: 2rem;
+}
 .formulario {
   display: flex;
   flex-direction: column;

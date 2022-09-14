@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Adicionar Animal</title>
+</head>
+
+<body>
+  <header id="homeHeader">
+    <div class="nav" id="nav">
+      <div class="nav-logo">
+        <a href="index.html"> <img src="assets/logo.png" alt=""></a>
+      </div>
+      <ul class="nav-itens">
+        <li> <img src="assets/pata.svg" alt=""> Início</li>
+        <li> <img src="assets/pata.svg" alt=""> Informações
+          <div class="dropdown-info">
+            <a href="#">Contato</a>
+            <a href="#">Regulamentos</a>
+            <a href="#">Clubes</a>
+            <a href="#">Calendário</a>
+            <a href="#">Loja</a>
+          </div>
+        </li>
+        <li> <img src="assets/pata.svg" alt=""> Cadastre-se
+          <div class="dropdown-cadastro">
+            <a href="#">Cadastrar Membro</a>
+            <a href="#">Cadastrar Clube</a>
+          </div>
+        </li>
+
+        <li> <img src="assets/pata.svg" alt=""><a href="login.html"> Login </a></li>
+
+      </ul>
+      <div class="patrocinadores">
+        <h1>Patrocinadores:</h1>
+        <div class="img-patrocinadores">
+          <img src="assets/stormdog.png" alt="">
+          <img src="assets/zawar.png" alt="">
+          <img src="assets/hawary.png" alt="">
+        </div>
+      </div>
+      <div class="menu-ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="containerCadastro">
+    </div>
+    <div class="formulario">
+      <div>
+        <h1>Adicionar Animal</h1>
+        <p>Insira os dados do animal que irá pertencer a sua conta:</p>
+      </div>
+      <div class="perguntasCad">
+        <div>
+          <label for="nome">Nome: </label>
+          <input type="text" placeholder="Nome do Animal" id="nome">
+        </div>
+        <div>
+          <label for="numeroRegistro">Nº de Registro:</label>
+          <input type="number" placeholder="Número de Registro" id="numeroRegistro">
+        </div>
+        <div>
+          <label for="microship">Tatuagem ou Microship:</label>
+          <input type="text" placeholder="Número de Tatuagem ou Microship" id="microship">
+        </div>
+        <div>
+          <label for="raca">Raça:</label>
+          <input type="text" placeholder="Raça" id="raca">
+        </div>
+        <div>
+          <label for="mae">Mãe: </label>
+          <input type="text" placeholder="Mãe" id="mae">
+        </div>
+        <div>
+          <label for="pai">Pai: </label>
+          <input type="text" placeholder="Cidade" id="pai">
+        </div>
+        <div>
+          <label for="criador">Criador: </label>
+          <input type="text" placeholder="criador">
+        </div>
+        <div>
+          <label for="pedigree">Pedigree:</label>
+          <input type="file" id="pedigree">
+        </div>
+        <div>
+          <label for="dataNasc">Data de Nascimento:</label>
+          <input type="date" id="dataNasc">
+        </div>
+        <div>
+          <label for="sexo">Sexo: </label>
+          <select name="sexo" id="sexo">
+            <option value="macho">Macho</option>
+            <option value="femea">Fêmea</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="logo-footer"><img src="assets/logo.png" alt=""></div>
+      <div class="sociais">
+        <span>
+          <a href="https://www.facebook.com/mondioringbrasil">
+            <img src="assets/social/facebook.png" alt="">
+          </a>
+        </span>
+        <span>
+          <a href="https://www.instagram.com/mondioringbrasil/">
+            <img src="assets/social/instagram.png" alt="">
+          </a>
+        </span>
+        <span>
+          <a href="https://www.youtube.com/channel/UCT5uPj2QxI3rHu20zNltMoQ">
+            <img src="assets/social/yt.png" alt="">
+          </a>
+        </span>
+      </div>
+      <div class="caju">
+        <p>© 2022 Site produzido por <a href="#">Caju DevSistems.</a></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+
+</html>
