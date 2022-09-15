@@ -59,11 +59,9 @@
   </header>
 
   <body>
-    <div class="containerCadastro">
-    </div>
-    <div class="formulario">
+    <div class="formulario" id="formularioCadastroAnimal">
       <div>
-        <h1>Adicionar Animal</h1>
+        <h1>1. Adicionar Animal</h1>
         <p>Insira os dados do animal que irá pertencer a sua conta:</p>
       </div>
       <div class="perguntasCad">
@@ -93,7 +91,7 @@
         </div>
         <div>
           <label for="criador">Criador: </label>
-          <input type="text" placeholder="criador">
+          <input type="text" placeholder="Criador">
         </div>
         <div>
           <label for="pedigree">Pedigree:</label>
@@ -109,6 +107,57 @@
             <option value="macho">Macho</option>
             <option value="femea">Fêmea</option>
           </select>
+        </div>
+      </div>
+      <div class="formulario">
+        <div>
+          <h1>2. Resultado do Animal em Competições</h1>
+          <p>Insira os dados do animal que irá pertencer a sua conta:</p>
+        </div>
+        <div class="perguntasCad">
+          <div>
+            <label for="nome">Nome: </label>
+            <input type="text" placeholder="Nome do Animal" id="nome">
+          </div>
+          <div>
+            <label for="numeroRegistro">Nº de Registro:</label>
+            <input type="number" placeholder="Número de Registro" id="numeroRegistro">
+          </div>
+          <div>
+            <label for="microship">Tatuagem ou Microship:</label>
+            <input type="text" placeholder="Número de Tatuagem ou Microship" id="microship">
+          </div>
+          <div>
+            <label for="raca">Raça:</label>
+            <input type="text" placeholder="Raça" id="raca">
+          </div>
+          <div>
+            <label for="mae">Mãe: </label>
+            <input type="text" placeholder="Mãe" id="mae">
+          </div>
+          <div>
+            <label for="pai">Pai: </label>
+            <input type="text" placeholder="Cidade" id="pai">
+          </div>
+          <div>
+            <label for="criador">Criador: </label>
+            <input type="text" placeholder="criador">
+          </div>
+          <div>
+            <label for="pedigree">Pedigree:</label>
+            <input type="file" id="pedigree">
+          </div>
+          <div>
+            <label for="dataNasc">Data de Nascimento:</label>
+            <input type="date" id="dataNasc">
+          </div>
+          <div>
+            <label for="sexo">Sexo: </label>
+            <select name="sexo" id="sexo">
+              <option value="macho">Macho</option>
+              <option value="femea">Fêmea</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>

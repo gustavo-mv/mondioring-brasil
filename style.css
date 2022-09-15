@@ -1128,6 +1128,9 @@ form {
   background-color: rgb(202, 202, 202);
   text-align: center;
 }
+#formularioCadastroAnimal {
+  padding-top: 10rem;
+}
 .perguntasCad {
   display: grid;
   grid-template-columns: 25rem 25rem 25rem;
@@ -1150,8 +1153,8 @@ form {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: navy;
-  color: gainsboro;
+  background-color: rgb(194, 222, 194);
+  color: black;
   padding: 2rem;
 }
 .perguntasCad select {
@@ -1167,13 +1170,14 @@ form {
   margin-bottom: 5vh;
 }
 .formulario input {
-  background-color: transparent;
+  padding: 0.3rem;
+  background-color: white;
   border: 0px;
   border-bottom: 1px solid;
-  border-color: white;
+  border-color: black;
   margin: 2vh;
   height: 5vh;
-  color: white;
+  color: black;
   width: 60%;
 }
 #cadastrar {
@@ -1200,13 +1204,16 @@ form {
     background-color: rgb(202, 202, 202);
     text-align: center;
   }
+  #formularioCadastroAnimal {
+    padding-top: 22vh;
+  }
   .formulario {
     display: flex;
     align-items: left;
     flex-direction: column;
     width: 100%;
-    background-color: navy;
-    color: gainsboro;
+    background-color: rgb(194, 222, 194);
+    color: black;
     padding: 2rem;
   }
   .perguntasCad {
@@ -1227,10 +1234,10 @@ form {
     margin: 1rem;
   }
   .formulario input {
-    background-color: transparent;
+    background-color: white;
     border: 0px;
     border-bottom: 1px solid;
-    border-color: white;
+    border-color: black;
     margin: 2vh;
     height: 5vh;
     width: 90%;
