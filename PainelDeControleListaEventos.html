@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>PAINEL DE CONTROLE| LISTA DE EVENTOS DA PLATAFORMA</title>
+</head>
+
+
+<body>
+  <div id="homeHeader">
+    <div class="nav" id="nav">
+      <div class="nav-logo">
+        <a href="index.html"> <img src="assets/logo.png" alt=""></a>
+      </div>
+      <ul class="nav-itens">
+        <li> <img src="assets/pata.svg" alt=""> Início</li>
+        <li> <img src="assets/pata.svg" alt=""> Informações
+          <div class="dropdown-info">
+            <a href="#">Contato</a>
+            <a href="#">Regulamentos</a>
+            <a href="#">Clubes</a>
+            <a href="#">Calendário</a>
+            <a href="#">Loja</a>
+          </div>
+        </li>
+        <li> <img src="assets/pata.svg" alt=""> Cadastre-se
+          <div class="dropdown-cadastro">
+            <a href="#">Cadastrar Membro</a>
+            <a href="#">Cadastrar Clube</a>
+          </div>
+        </li>
+
+        <li> <img src="assets/pata.svg" alt=""><a href="login.html"> Login </a></li>
+
+      </ul>
+      <div class="patrocinadores">
+        <h1>Patrocinadores:</h1>
+        <div class="img-patrocinadores">
+          <img src="assets/stormdog.png" alt="">
+          <img src="assets/zawar.png" alt="">
+          <img src="assets/hawary.png" alt="">
+        </div>
+      </div>
+      <div class="menu-ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div> -->
+
+  <main class="main">
+    <div class="painel">
+      <h1>PAINEL DE CONTROLE| LISTA DE EVENTOS DA PLATAFORMA</h1>
+
+    </div>
+
+    <section class=>
+
+      <div class="container-form text-center">
+        
+
+        <form method="get" action="form.php" class="row text-left" enctype="multipart/form-data"
+          id="ClubesAdicionarForm" accept-charset="utf-8">
+          <h2>Dados do Evento</h2>
+
+          <div class="col-12 form-group">
+            <label>NOME:</label>
+            <div class="input text">
+              <input name="nome" class="form-control" placeholder="Informe o nome do evento" maxlength="255" type="text"
+                id="NomeEvento">
+            </div>
+          </div>
+
+          <div class="col-4 form-group">
+
+            <label>DATA DO EVENTO:</label>
+            <div class="input text">
+              <input name="data-evento" class="form-control" type="date" id="DataEvento">
+            </div>
+          </div>
+
+          <div class="col-4 form-group">
+
+            <label>HORA INICIAL DO EVENTO:</label>
+            <div class="input text">
+              <input name="hora-inicial" class="form-control" placeholder="HH:MM" maxlength="5" type="time"
+                id="HoraInicio">
+            </div>
+          </div>
+
+          <div class="col-4 form-group">
+            <label>HORA FINAL DO EVENTO:</label>
+            <div class="input text">
+              <input name="hora-final" class="form-control" placeholder="HH:MM" maxlength="5" type="time"
+                id="HoraFinal">
+            </div>
+          </div>
+
+          <div class="col-3 form-group">
+
+            <label>CEP:</label>
+            <div class="input text">
+              <input name="CepEvento" class="form-control"
+                placeholder="Informe o CEP do Evento" data-mask="99999-999" maxlength="9" type="number" id="CepEvento">
+            </div>
+          </div>
+
+          <div class="col-9 form-group">
+            <label>ENDEREÇO:</label>
+            <div class="input text">
+              <input name="endereco-evento" class="form-control" placeholder="Informe o endereço do Evento"
+                maxlength="255" type="text" id="EnderecoEvento">
+            </div>
+
+          </div>
+          <div class="col-4 form-group">
+
+            <label>BAIRRO:</label>
+            <div class="input text">
+              <input name="bairro-evento" class="form-control" placeholder="Informe o bairro do Evento" maxlength="255"
+                type="text" id="BairroEvento">
+            </div>
+          </div>
+
+          <div class="col-8 form-group">
+            <label>CIDADE:</label>
+            <div class="input text"><input name="cidade-evento" class="form-control"
+                placeholder="Informe a cidade do evento" maxlength="255" type="text" id="CidadeEvento">
+            </div>
+          </div>
+
+          <div class="col-12 form-group">
+
+            <label>ESTADO</label>
+            <div class="input select"><select name="uf-evento" class="form-control text-left" id="UfEvento">
+                <option value="">Selecionar</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select></div>
+          </div>
+
+          <div class="col-12 form-group">
+            <label>DESCRIÇÃO DO EVENTO:</label>
+            <div class="input text">
+              <textarea name="DescricaoEvento" class="form-control" placeholder="" maxlength="255" type="text" id="DescricaoEvento">
+              </textarea>
+            </div>
+          </div>
+
+          <div class="col-12 form-group">
+
+            <label>EVENTO EXCLUSIVO PARA MEMBROS</label>
+            <div class="input text"><select name="evento-para-membro" class="form-control" id="EventoParaMembro">
+                <option value="">Selecionar</option>
+                <option value="sim">SIM</option>
+                <option value="nao">NÃO</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12 form-group">
+
+            <label>EVENTO GRATUITO</label>
+            <div class="input text"><select name="evento-gratuito" class="form-control" id="EventoParaMembro">
+                <option value="">Selecionar</option>
+                <option value="sim">SIM</option>
+                <option value="nao">NÃO</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-3 form-group">
+            <label>VALOR DO COMBO 1: </label>
+            <div class="input text"><input name="valor-do-combo-1" class="form-control" maxlength="255" type="text"
+                id="ValorDoCombo1">
+            </div>
+          </div>
+
+          <div class="col-5 form-group">
+            <label>URL DO PAGAMENTO DO COMBO 1:</label>
+            <div class="input text"><input name="url-do-pagamento-do-combo-1" class="form-control" maxlength="255"
+                type="text" id="UrlDoPagamentoDoCombo1">
+            </div>
+          </div>
+
+          <div class="col-4 form-group">
+            <label>DESCRIÇÃO DO COMBO 1:</label>
+            <div class="input text"><input name="descricao-do-combo-1" class="form-control"
+                placeholder="Inscrição + Camisa" maxlength="255" type="text" id="DataEvento">
+            </div>
+          </div>
+
+          <div class="col-3 form-group">
+            <label>VALOR DO COMBO 2:</label>
+            <div class="input text"><input name="valor-do-combo-1" class="form-control" maxlength="255" type="text"
+                id="ValorDoCombo2">
+            </div>
+          </div>
+
+          <div class="col-5 form-group">
+            <label>URL DO PAGAMENTO DO COMBO 2:</label>
+            <div class="input text"><input name="url-do-pagamento-do-combo-2" class="form-control" maxlength="255"
+                type="text" id="UrlDoPagamentoDoCombo2">
+            </div>
+          </div>
+
+          <div class="col-4 form-group">
+            <label>DESCRIÇÃO DO COMBO 2:</label>
+            <div class="input text"><input name="data-evento" class="form-control" placeholder="Inscrição + Camisa"
+                maxlength="255" type="text" id="DescricaoDoCombo">
+            </div>
+          </div>
+
+          <div class="col-3 form-group">
+            <label>VALOR DO COMBO 3:</label>
+            <div class="input text"><input name="valor-do-combo-3" class="form-control" maxlength="255" type="text"
+                id="ValorDoCombo3">
+            </div>
+          </div>
+
+          <div class="col-5 form-group">
+            <label>URL DO PAGAMENTO DO COMBO 3:</label>
+            <div class="input text"><input name="url-do-pagamento-do-combo-3" class="form-control" maxlength="255"
+                type="text" id="UrlDoPagamentoDoCombo3">
+            </div>
+          </div>
+
+          <div class="col-4 form-group">
+            <label>DESCRIÇÃO DO COMBO 3:</label>
+            <div class="input text"><input name="descricao-do-combo3" class="form-control"
+                placeholder="Inscrição + Camisa" maxlength="255" type="text" id="DescricaoDoCombo3">
+            </div>
+          </div>
+
+          <div class="col-3 form-group">
+            <label>VALOR DO COMBO 4:</label>
+            <div class="input text"><input name="valor-do-combo-3" class="form-control" maxlength="255" type="text"
+                id="ValorDoCombo3">
+            </div>
+          </div>
+
+          <div class="col-5 form-group">
+            <label>URL DO PAGAMENTO DO COMBO 4:</label>
+            <div class="input text"><input name="url-do-pagamento-do-combo-3" class="form-control" maxlength="255"
+                type="text" id="UrlDoPagamentoDoCombo3">
+            </div>
+          </div>
+
+          <div class="col-4 form-group">
+            <label>DESCRIÇÃO DO COMBO 4:</label>
+            <div class="input text"><input name="descricao-do-combo3" class="form-control"
+                placeholder="Inscrição + Camisa" maxlength="255" type="text" id="DescricaoDoCombo3">
+            </div>
+          </div>          
+
+          <div class="col-3 form-group">
+            <label>VALOR DO COMBO 5:</label>
+            <div class="input text"><input name="valor-do-combo-5" class="form-control" maxlength="255" type="text"
+                id="ValorDoCombo5">
+            </div>
+          </div>
+
+          <div class="col-5 form-group">
+            <label>URL DO PAGAMENTO DO COMBO 5:</label>
+            <div class="input text"><input name="url-do-pagamento-do-combo-5" class="form-control" maxlength="255"
+                type="text" id="UrlDoPagamentoDoCombo5">
+            </div>
+          </div>
+
+          <div class="col-4 form-group">
+            <label>DESCRIÇÃO DO COMBO 5:</label>
+            <div class="input text"><input name="descricao-do-combo3" class="form-control"
+                placeholder="Inscrição + Camisa" maxlength="255" type="text" id="DescricaoDoCombo5">
+            </div>
+          </div>
+
+          <div class="col-12 form-group">
+            <div class="input text">
+              <label for="banner-evento">BANNER DO EVENTO:</label>
+              <input name="banner-evento" class="form-control" type="file">
+            </div>
+          </div>
+
+          <div class="col-4 form-group color1">
+            <div class="input text">
+              <input type="submit" id="cadastro" value="Cadastrar">
+            </div>
+          </div>
+
+        </form> 
+      </div>
+
+    </section> 
+    <br>    <br>     <br>
+  </main>
+
+  <footer>
+    <div class="logo-footer"><img src="assets/logo.png" alt=""></div>
+    <div class="sociais">
+      <span>
+        <a href="https://www.facebook.com/mondioringbrasil">
+          <img src="assets/social/facebook.png" alt="">
+        </a>
+      </span>
+      <span>
+        <a href="https://www.instagram.com/mondioringbrasil/">
+          <img src="assets/social/instagram.png" alt="">
+        </a>
+      </span>
+      <span>
+        <a href="https://www.youtube.com/channel/UCT5uPj2QxI3rHu20zNltMoQ">
+          <img src="assets/social/yt.png" alt="">
+        </a>
+      </span>
+    </div>
+    <div class="caju">
+      <p>© 2022 Site produzido por <a href="#">Caju DevSistems.</a></p>
+    </div>
+  </footer>  
+
+  <script src="script.js"></script>
+  <script src="ckeditor/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace( 'DescricaoEvento' );
+  </script>
+
+</body>
+
+</html>
