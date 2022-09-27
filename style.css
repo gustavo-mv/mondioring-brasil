@@ -1195,6 +1195,11 @@ form {
   background-color: yellow;
   transform: scale(1.1);
 }
+
+.animalCompet {
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 900px) {
   .containerCadastro {
     width: 100%;
