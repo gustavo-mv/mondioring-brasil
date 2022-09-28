@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Cadastre-se</title>
+</head>
+
+<body>
+  <header id="homeHeader">
+    <div class="nav" id="nav">
+      <div class="nav-logo">
+        <a href="index.html"> <img src="assets/logo.png" alt=""></a>
+      </div>
+      <ul class="nav-itens">
+        <li> <img src="assets/pata.svg" alt=""><a href="index.html">Início</a></li>
+        <li> <img src="assets/pata.svg" alt=""> Informações
+          <div class="dropdown-info">
+            <a href="#">Contato</a>
+            <a href="#">Regulamentos</a>
+            <a href="#">Clubes</a>
+            <a href="#">Calendário</a>
+            <a href="#">Loja</a>
+          </div>
+        </li>
+        <li> <img src="assets/pata.svg" alt=""> Cadastre-se
+          <div class="dropdown-cadastro">
+            <a href="#">Cadastrar Membro</a>
+            <a href="#">Cadastrar Clube</a>
+          </div>
+        </li>
+
+        <li> <img src="assets/pata.svg" alt=""><a href="login.html"> Login </a></li>
+
+      </ul>
+      <div class="patrocinadores">
+        <h1>Patrocinadores:</h1>
+        <div class="img-patrocinadores">
+          <img src="assets/stormdog.png" alt="">
+          <img src="assets/zawar.png" alt="">
+          <img src="assets/hawary.png" alt="">
+        </div>
+      </div>
+      <div class="menu-ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="containerCadastro">
+      <header class="introCadastro">
+        <h3>Cadastre seu clube.</h3>
+        <p>TODOS OS REQUISITOS DEVEM ESTAR PREENCHIDOS DENTRO DO PRIMEIRO ANO DE VIDA DO CLUBE: <br>
+          - Mínimo de 3 membros; <br>
+          - Um responsável afiliado ao Mondioring Brasil; <br>
+          - Endereço oficial; <br>
+          - 1 Cão graduado; <br>
+          - 1 Figurante Homologado. <br> <br>
+          Após o cadastro, o conselho Mondioring Brasil irá realizar uma checagem para validar a existência do clube, caso cadastro falso, o clube será removido da plataforma.
+        </p>
+      </header>
+    </div>
+    <div class="formulario">
+      <div>
+        <h1>Formulário | Clube</h1>
+        <p>Nos fale sobre seu Clube:</p>
+      </div>
+      <div class="perguntasCad" id="membroCad">
+        <div>
+          <label for="nome">Nome: </label>
+          <input type="text" placeholder="Nome do Clube" id="nome">
+        </div>
+        <div>
+          <label for="nome">Nome do Responsável: </label>
+          <input type="text" placeholder="Nome do responsável pelo clube" id="nome">
+        </div>
+        <div>
+          <label for="email">E-mail do Clube:</label>
+          <input type="email" placeholder="Email" id="email">
+        </div>
+        <div>
+          <label for="tel">Telefone:</label>
+          <input type="tel" placeholder="Telefone do Clube" id="tel">
+        </div>
+        <div>
+          <label for="end">Endereço: </label>
+          <input type="text" placeholder="Endereço do Clube" id="end">
+        </div>
+        <div>
+          <label for="bairro">Bairro: </label>
+          <input type="text" placeholder="Bairro do Clube" id="bairro">
+        </div>
+        <div>
+          <label for="cidade">Cidade: </label>
+          <input type="text" placeholder="Cidade do Clube" id="cidade">
+        </div>
+        <div>
+          <label for="cep">CEP: </label>
+          <input type="number" placeholder="CEP do Clube">
+        </div>
+        <div>
+          <label for="estado">Estado: </label>
+          <select name="estado" id="estado">
+            <option value="">Estado</option>
+            <option value="Acre">Acre</option>
+            <option value="Alagoas">Alagoas</option>
+            <option value="Amapá">Amapá</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Ceará">Ceará</option>
+            <option value="Distrito Federal">Distrito Federal</option>
+            <option value="Espírito Santo">Espírito Santo</option>
+            <option value="Goiás">Goiás</option>
+            <option value="Maranhão">Maranhão</option>
+            <option value="Mato Grosso">Mato Grosso</option>
+            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="Pará">Pará</option>
+            <option value="Paraíba">Maranhão</option>
+            <option value="Paraná">Paraná</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Piauí">Piauí</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            <option value="Rondônia">Rondônia</option>
+            <option value="Roraima">Roraima</option>
+            <option value="Santa Catarina">Santa Catarina</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Tocantins">Tocantins</option>
+          </select>
+        </div>
+        <div>
+          <label for="pais">País:</label>
+          <select name="pais" id="pais">
+            <option value="BR">Brasil</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="animalCompet">
+          <label for="fotoClube">Logo do Clube</label>
+          <input type="file" id="fotoClube">
+        </div>
+      </div>
+      <input type="submit" id="cadastrar" value="Cadastrar Clube">
+    </div>
+    <footer>
+      <div class="logo-footer"><img src="assets/logo.png" alt=""></div>
+      <div class="sociais">
+        <span>
+          <a href="https://www.facebook.com/mondioringbrasil">
+            <img src="assets/social/facebook.png" alt="">
+          </a>
+        </span>
+        <span>
+          <a href="https://www.instagram.com/mondioringbrasil/">
+            <img src="assets/social/instagram.png" alt="">
+          </a>
+        </span>
+        <span>
+          <a href="https://www.youtube.com/channel/UCT5uPj2QxI3rHu20zNltMoQ">
+            <img src="assets/social/yt.png" alt="">
+          </a>
+        </span>
+      </div>
+      <div class="caju">
+        <p>© 2022 Site produzido por <a href="#">Caju DevSistems.</a></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+
+</html>
