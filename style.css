@@ -1133,8 +1133,9 @@ form {
 }
 .perguntasCad {
   display: grid;
+  align-items: baseline;
   grid-template-columns: 25rem 25rem 25rem;
-  margin-left: 10vw;
+  margin-left: 5vw;
 }
 .formulario .perguntasCad div {
   display: flex;
@@ -1148,6 +1149,7 @@ form {
   margin-right: 2rem;
 }
 .formulario {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1178,7 +1180,38 @@ form {
   margin: 2vh;
   height: 5vh;
   color: black;
+  width: 40%;
+}
+#membroCad input {
+  padding: 0.3rem;
+  background-color: white;
+  border: 0px;
+  border-bottom: 1px solid;
+  border-color: black;
+  margin: 2vh;
+  height: 5vh;
+  color: black;
   width: 60%;
+}
+.formulario #resultado input {
+  padding: 0.3rem;
+  background-color: white;
+  border: 0px;
+  border-bottom: 1px solid;
+  border-color: black;
+  height: 5vh;
+  color: black;
+  width: 60%;
+}
+#adicionarFotoAnimal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#adicionarFotoAnimal input {
+  height: 20vh;
+  width: 60vw;
+  text-align: center;
 }
 #cadastrar {
   margin-top: 2rem;
@@ -1266,7 +1299,7 @@ form {
 /* *----------------------PAINEL DE CONTROLE| LISTA DE EVENTOS DA PLATAFORMA -----------------*/
 /* *----------------------PAINEL DE CONTROLE| LISTA DE EVENTOS DA PLATAFORMA -----------------*/
 
-.main{
+.main {
   width: 100%;
   height: auto;
   padding: 1rem;
@@ -1275,10 +1308,9 @@ form {
   background-color: rgb(202, 202, 202);
   text-align: center;
 }
-.main form{
+.main form {
   height: auto;
 }
-
 
 .text-center {
   text-align: center !important;
@@ -1293,11 +1325,13 @@ form {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: 20px;
-  margin-left: 20px; 
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
   background-color: rgba(198, 195, 35, 0.967);
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 .form-control {
@@ -1313,10 +1347,23 @@ form {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;	
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto{
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -1327,95 +1374,95 @@ form {
   margin-bottom: 1rem;
 }
 .container-form {
-display: -ms-flexbox;
-display: flex;
--ms-flex-wrap: wrap;
-flex-wrap: wrap;
--ms-flex-align: center;
-align-items: center;
--ms-flex-pack: justify;
-justify-content: space-between;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .col-auto {
--ms-flex: 0 0 auto;
-flex: 0 0 auto;
-width: auto;
-max-width: 100%;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
 }
 
 .col-1 {
--ms-flex: 0 0 8.333333%;
-flex: 0 0 8.333333%;
-max-width: 8.333333%;
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
 }
 
 .col-2 {
--ms-flex: 0 0 16.666667%;
-flex: 0 0 16.666667%;
-max-width: 16.666667%;
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
 }
 
 .col-3 {
--ms-flex: 0 0 25%;
-flex: 0 0 25%;
-max-width: 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 
 .col-4 {
--ms-flex: 0 0 33.333333%;
-flex: 0 0 33.333333%;
-max-width: 33.333333%;
-font-size: px;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  font-size: px;
 }
 
 .col-5 {
--ms-flex: 0 0 41.666667%;
-flex: 0 0 41.666667%;
-max-width: 41.666667%;
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
 }
 
 .col-6 {
--ms-flex: 0 0 50%;
-flex: 0 0 50%;
-max-width: 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .col-7 {
--ms-flex: 0 0 58.333333%;
-flex: 0 0 58.333333%;
-max-width: 58.333333%;
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
 }
 
 .col-8 {
--ms-flex: 0 0 66.666667%;
-flex: 0 0 66.666667%;
-max-width: 66.666667%;
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
 }
 
 .col-9 {
--ms-flex: 0 0 75%;
-flex: 0 0 75%;
-max-width: 75%;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
 }
 
 .col-10 {
--ms-flex: 0 0 83.333333%;
-flex: 0 0 83.333333%;
-max-width: 83.333333%;
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
 }
 
 .col-11 {
--ms-flex: 0 0 91.666667%;
-flex: 0 0 91.666667%;
-max-width: 91.666667%;
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
 }
 
 .col-12 {
--ms-flex: 0 0 100%;
-flex: 0 0 100%;
-max-width: 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
-#cadastro{ 
+#cadastro {
   color: white;
   margin-top: 2rem;
   width: 100%;
@@ -1425,16 +1472,28 @@ max-width: 100%;
   border: 0;
   transition: 0.3s;
 }
-  
+
 #cadastro:hover {
   background-color: blue;
   transform: scale(1.1);
-  }
+}
 
-  @media (max-width: 720px) {
-    .col-auto, .col-11, .col-12, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;  
+@media (max-width: 720px) {
+  .col-auto,
+  .col-11,
+  .col-12,
+  .col-10,
+  .col-9,
+  .col-8,
+  .col-7,
+  .col-6,
+  .col-5,
+  .col-4,
+  .col-3,
+  .col-2,
+  .col-1 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
