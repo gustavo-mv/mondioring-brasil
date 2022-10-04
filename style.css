@@ -21,7 +21,7 @@ li {
   background-color: rgb(1, 6, 63);
 }
 
-.nav {
+#nav {
   box-shadow: 0px 0px 8px 0px black;
   width: 100%;
   color: white;
@@ -65,8 +65,8 @@ li {
   padding: 0.8rem;
 }
 
-.nav ul li:hover:nth-child(2) .dropdown-info,
-.nav ul li:hover:nth-child(3) .dropdown-cadastro {
+#nav ul li:hover:nth-child(2) .dropdown-info,
+#nav ul li:hover:nth-child(3) .dropdown-cadastro {
   top: 2rem;
   left: -1rem;
   display: flex;
@@ -79,7 +79,7 @@ li {
   z-index: 2;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-.nav ul li:hover:nth-child(3) .dropdown-cadastro {
+#nav ul li:hover:nth-child(3) .dropdown-cadastro {
   top: 2rem;
 }
 .nav-logo img {
@@ -598,17 +598,98 @@ footer img {
   body {
     overflow: auto;
   }
-  .nav {
-    overflow: hidden;
+  #nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
+
   .nav-logo img {
     width: 8rem;
   }
   .nav-itens {
     display: none;
+  }
+  #nav span {
+    transition: 0.6s;
+  }
+  #nav.active span:nth-child(1) {
+    transform: rotate(-135deg);
+    position: relative;
+    top: 1rem;
+  }
+  #nav.active span:nth-child(2) {
+    display: none;
+  }
+  #nav.active span:nth-child(3) {
+    transform: rotate(135deg);
+  }
+  #nav .nav-itens {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    left: -100vw;
+    transition: 0.5s ease;
+  }
+  #nav.active .nav-itens {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 6, 63);
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 15vh;
+    padding-bottom: 17rem;
+  }
+  .nav-itens li {
+    padding: 0;
+  }
+  .nav-itens li {
+    cursor: pointer;
+    font-size: 1.6rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10rem;
+  }
+  .nav-itens li:hover > img {
+    opacity: 1;
+  }
+  .nav-itens li:first-child {
+    position: relative;
+    left: 0;
+  }
+  .nav-itens li:nth-child(3) {
+    white-space: nowrap;
+    right: 0.5rem;
+  }
+  .nav-itens li:last-child {
+    position: relative;
+    right: 0;
+  }
+  #nav ul li:hover:nth-child(2) .dropdown-info,
+  #nav ul li:hover:nth-child(3) .dropdown-cadastro {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+    width: 80vw;
+    left: -3rem;
+    top: 2.7rem;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  #nav ul li:hover:nth-child(3) .dropdown-cadastro {
+    top: 3rem;
   }
   .patrocinadores {
     width: 20%;
@@ -1582,12 +1663,6 @@ form {
 }
 #logout:hover {
   background-color: red;
-  color: white;
-  margin-top: 1rem;
-  width: 100%;
-  height: 3rem;
-  border-radius: 5px;
-  transform: scale(1.05);
 }
 @-webkit-keyframes AnimationName {
   0% {
