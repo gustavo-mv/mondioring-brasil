@@ -35,7 +35,7 @@ window.onscroll = function () {
 
 const btnMobile = document.getElementById("btn-mobile");
 function toggleMenu() {
-  const nav = document.getElementById("nav");
+  const nav = document.getElementById("navteste");
   nav.classList.toggle("active");
 }
 
