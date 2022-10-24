@@ -1218,7 +1218,7 @@ input.check {
   object-fit: cover;
   transform: scale(1.06);
 }
-form {
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
