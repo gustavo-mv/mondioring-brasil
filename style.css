@@ -1484,6 +1484,35 @@ input.check {
   background-color: rgba(198, 195, 35, 0.967);
   border-radius: 10px;
 }
+.row-2{
+  display: block;
+  color: #fff;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: rgba(27, 5, 189, 0.967);
+  text-shadow: 0.2em 0.2em #333;
+  
+
+}
+
+.row-2 a:hover{
+  background-color: rgba(27, 5, 189, 0.967);
+  color: rgba(255, 255, 221, 0.574);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.faqs .toggle {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+.toggle {
+  display: block;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
 
 .form-control {
   display: block;
